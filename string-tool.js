@@ -8,5 +8,22 @@ const StringTool = {
                 element.innerText += text;
             }, speed * index);
         })
+    },
+    toArray: function(string) {
+        return string.split(',');
+    },
+    toJSON: function(string) {
+        return JSON.parse(string);
+    },
+    toInt: function(string) {
+        return parseInt(string);
+    },
+    setSize: function(size, element) {
+        element.style += "font-size:" + size + ";";
+        return 0;
+    },
+    write: function(string, element) {
+        element.innerText = string;
+        return 0;
     }
 }
